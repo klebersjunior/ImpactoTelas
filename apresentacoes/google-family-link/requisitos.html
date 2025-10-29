@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+      
+      body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background: linear-gradient(135deg, #F8F9FA 0%, #E8EAED 100%);
+        position: relative;
+        overflow: hidden;
+      }
+      
+      .title {
+        font-weight: 700;
+        font-size: 36px;
+        color: #202124;
+      }
+      
+      .subtitle {
+        font-weight: 500;
+        font-size: 24px;
+        color: #4285F4;
+      }
+      
+      .content {
+        font-weight: 400;
+        font-size: 18px;
+        color: #5F6368;
+        line-height: 1.6;
+      }
+      
+      .requirement-item {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 16px;
+      }
+      
+      .requirement-icon {
+        width: 24px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 12px;
+        flex-shrink: 0;
+        color: #4285F4;
+      }
+      
+      .device-card {
+        background-color: white;
+        border-radius: 12px;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.2s;
+      }
+      
+      .device-card:hover {
+        transform: translateY(-5px);
+      }
+      
+      .device-icon {
+        font-size: 48px;
+        margin-bottom: 16px;
+      }
+      
+      .logo-shape {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        right: -80px;
+        bottom: -80px;
+        opacity: 0.05;
+        transform: rotate(-15deg);
+      }
+      
+      .note {
+        font-weight: 300;
+        font-size: 14px;
+        color: #5F6368;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slide-container flex flex-col p-16 relative">
+      <!-- Formas decorativas inspiradas no logo do Family Link -->
+      <div class="absolute top-0 left-0 w-32 h-32 bg-blue-500 rounded-full opacity-10"></div>
+      <div class="absolute top-40 left-20 w-16 h-16 bg-green-500 rounded-full opacity-10"></div>
+      
+      <!-- Cabeçalho -->
+      <div class="flex items-center mb-10">
+        <img src="/home/ubuntu/upload/search_images/PznUJj5sjstb.jpg" alt="Google Family Link Logo" class="w-12 h-12 mr-4">
+        <h1 class="title">Requisitos e Compatibilidade</h1>
+      </div>
+      
+      <!-- Conteúdo principal -->
+      <div class="flex">
+        <!-- Coluna de texto -->
+        <div class="w-1/2 pr-8">
+          <h2 class="subtitle mb-4">Requisitos Básicos</h2>
+          
+          <div class="requirement-item">
+            <div class="requirement-icon">
+              <i class="fas fa-check-circle"></i>
+            </div>
+            <p class="content">Conta Google para os pais</p>
+          </div>
+          
+          <div class="requirement-item">
+            <div class="requirement-icon">
+              <i class="fas fa-check-circle"></i>
+            </div>
+            <p class="content">Conta Google para a criança (pode ser criada durante a configuração)</p>
+          </div>
+          
+          <div class="requirement-item">
+            <div class="requirement-icon">
+              <i class="fas fa-check-circle"></i>
+            </div>
+            <p class="content">Dispositivos compatíveis para pais e filhos</p>
+          </div>
+          
+          <div class="requirement-item">
+            <div class="requirement-icon">
+              <i class="fas fa-check-circle"></i>
+            </div>
+            <p class="content">Conexão à internet para configuração inicial</p>
+          </div>
+          
+          <h2 class="subtitle mt-8 mb-4">Limitações</h2>
+          
+          <div class="requirement-item">
+            <div class="requirement-icon text-yellow-500">
+              <i class="fas fa-exclamation-triangle"></i>
+            </div>
+            <p class="content">iPhones e iPads não podem ser supervisionados com Family Link</p>
+          </div>
+          
+          <div class="requirement-item">
+            <div class="requirement-icon text-yellow-500">
+              <i class="fas fa-exclamation-triangle"></i>
+            </div>
+            <p class="content">Computadores (exceto Chromebooks) não podem ser supervisionados</p>
+          </div>
+          
+          <div class="requirement-item">
+            <div class="requirement-icon text-yellow-500">
+              <i class="fas fa-exclamation-triangle"></i>
+            </div>
+            <p class="content">Contas Google Workspace para Educação não são compatíveis</p>
+          </div>
+          
+          <p class="note mt-6">
+            * O Family Link pode não estar disponível em todos os países ou regiões.
+          </p>
+        </div>
+        
+        <!-- Coluna de dispositivos compatíveis -->
+        <div class="w-1/2 flex flex-col">
+          <h2 class="subtitle mb-6 text-center">Dispositivos Compatíveis</h2>
+          
+          <div class="grid grid-cols-2 gap-6">
+            <!-- Dispositivo dos pais -->
+            <div class="device-card">
+              <div class="device-icon text-blue-500">
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+              <h3 class="font-medium text-xl mb-2">Dispositivo dos Pais</h3>
+              <div class="flex justify-center space-x-4 mb-2">
+                <div class="flex flex-col items-center">
+                  <i class="fab fa-android text-green-500 text-2xl"></i>
+                  <span class="text-sm mt-1">Android 5.0+</span>
+                </div>
+                <div class="flex flex-col items-center">
+                  <i class="fab fa-apple text-gray-700 text-2xl"></i>
+                  <span class="text-sm mt-1">iOS 11.0+</span>
+                </div>
+              </div>
+              <p class="text-sm text-gray-600">Aplicativo Family Link para gerenciamento</p>
+            </div>
+            
+            <!-- Dispositivo da criança -->
+            <div class="device-card">
+              <div class="device-icon text-green-500">
+                <i class="fas fa-tablet-alt"></i>
+              </div>
+              <h3 class="font-medium text-xl mb-2">Dispositivo da Criança</h3>
+              <div class="flex justify-center space-x-4 mb-2">
+                <div class="flex flex-col items-center">
+                  <i class="fab fa-android text-green-500 text-2xl"></i>
+                  <span class="text-sm mt-1">Android 7.0+</span>
+                </div>
+                <div class="flex flex-col items-center">
+                  <i class="fab fa-chrome text-blue-500 text-2xl"></i>
+                  <span class="text-sm mt-1">Chromebook</span>
+                </div>
+              </div>
+              <p class="text-sm text-gray-600">Dispositivo a ser supervisionado</p>
+            </div>
+          </div>
+          
+          <div class="mt-8 bg-blue-50 p-4 rounded-lg border border-blue-200">
+            <div class="flex items-start">
+              <div class="text-blue-500 mr-3 mt-1">
+                <i class="fas fa-info-circle"></i>
+              </div>
+              <p class="text-sm text-blue-800">
+                Para crianças menores de 13 anos (ou idade aplicável no seu país), os pais precisam dar consentimento para criar uma conta Google gerenciada pelo Family Link.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Logo shape decorativo -->
+      <img src="/home/ubuntu/upload/search_images/Dh6QCNqLQQkB.png" alt="Family Link Shape" class="logo-shape">
+    </div>
+  </body>
+</html>
+

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+      
+      body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background: linear-gradient(135deg, #F8F9FA 0%, #E8EAED 100%);
+        position: relative;
+        overflow: hidden;
+      }
+      
+      .title {
+        font-weight: 700;
+        font-size: 48px;
+        color: #202124;
+      }
+      
+      .subtitle {
+        font-weight: 400;
+        font-size: 24px;
+        color: #5F6368;
+      }
+      
+      .logo-shape {
+        position: absolute;
+        width: 400px;
+        height: 400px;
+        right: -100px;
+        bottom: -100px;
+        opacity: 0.1;
+        transform: rotate(-15deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slide-container flex flex-col justify-center items-center p-16 relative">
+      <!-- Formas decorativas inspiradas no logo do Family Link -->
+      <div class="absolute top-0 left-0 w-32 h-32 bg-blue-500 rounded-full opacity-10"></div>
+      <div class="absolute top-40 left-20 w-16 h-16 bg-green-500 rounded-full opacity-10"></div>
+      <div class="absolute bottom-20 left-40 w-24 h-24 bg-yellow-500 rounded-full opacity-10"></div>
+      
+      <div class="flex flex-col items-center justify-center text-center z-10 mb-8">
+        <img src="/home/ubuntu/upload/search_images/PznUJj5sjstb.jpg" alt="Google Family Link Logo" class="w-32 h-32 mb-6">
+        <h1 class="title mb-4">Google Family Link</h1>
+        <h2 class="subtitle mb-8">Guia Completo de Instalação e Configuração</h2>
+      </div>
+      
+      <div class="mt-8 flex justify-center">
+        <img src="/home/ubuntu/upload/search_images/X45GXPot3YCx.jpg" alt="Family Link Setup" class="rounded-lg shadow-lg" style="height: 300px; width: auto;">
+      </div>
+      
+      <!-- Logo shape decorativo -->
+      <img src="/home/ubuntu/upload/search_images/Dh6QCNqLQQkB.png" alt="Family Link Shape" class="logo-shape">
+      
+      <div class="absolute bottom-8 right-8 text-sm text-gray-500">
+        Agosto 2025
+      </div>
+    </div>
+  </body>
+</html>
+
